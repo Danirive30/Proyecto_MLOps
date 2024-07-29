@@ -44,7 +44,8 @@ Se utilizó FastAPI para desarrollar una API con los siguientes endpoints:
 ### Despliegue
 
 El despliegue se realizó utilizando Render para que la API sea accesible desde la web.
-- **URL Render**: 
+
+- **URL Render**: <https://proyecto-mlops-kpxh.onrender.com>
 
 ### Análisis Exploratorio de los Datos (EDA)
 
@@ -64,7 +65,7 @@ Grabar un video de máximo 7 minutos mostrando:
 - Explicación breve del modelo de recomendación.
 - Explicación de EDA, ETL y desarrollo de la API.
 
-- **URL YouTube**: 
+- **URL YouTube**:
 
 ## Criterios de Evaluación
 
@@ -76,13 +77,14 @@ Grabar un video de máximo 7 minutos mostrando:
 
 - **Dataset**: `movies_dataset.csv` y `credits.csv`.
 - **Diccionario de Datos**: Descripciones de las columnas disponibles en el dataset.
-- **URL Data**: https://drive.google.com/drive/folders/1_Mre-XI31f1whYUZaBF5-RnOGashkuH4?usp=drive_link
+- **URL Data**: <https://drive.google.com/drive/folders/1_Mre-XI31f1whYUZaBF5-RnOGashkuH4?usp=drive_link>
 
 ## Autor
 
-Este proyecto fue realizado por: José Daniel Rivera Hernández. (Daniel.rivera.30@outlook.com)
+Este proyecto fue realizado por: José Daniel Rivera Hernández. (<Daniel.rivera.30@outlook.com>)
 
 ---
 
 ¡Saludos! 🚀
+
 # Proyecto_MLOps
