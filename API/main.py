@@ -13,7 +13,7 @@ app = FastAPI()
 
 # Cargamos el archivo CSV con los datos una sola vez
 # Este paso es importante para evitar la carga repetida de datos en cada solicitud
-data = pd.read_csv('API\data_final_ML.csv')
+data = pd.read_csv('API\\data_final_ML.csv')
 # Convertimos la columna 'release_date' a tipo datetime para facilitar el trabajo con fechas
 data['release_date'] = pd.to_datetime(data['release_date'], errors='coerce')
 
