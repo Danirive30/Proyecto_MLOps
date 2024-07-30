@@ -28,7 +28,11 @@ Para el MVP, se realizaron las siguientes transformaciones en los datos:
 - Asegurar que las fechas estén en formato `AAAA-mm-dd` y crear una columna `release_year`.
 - Crear una columna `return` calculando `revenue / budget` y asignar `0` cuando no hay datos disponibles.
 - Eliminar las columnas `video`, `imdb_id`, `adult`, `original_title`, `poster_path`, y `homepage`.
-- Filtar data para reducir el tamaño del archivo `data_final_ML.csv` (con el que se trabajaron los endpoints de la API).
+- Filtar data para reducir el tamaño del archivo `data_final_ML.csv` (5000 registros, con el que se trabajaron los endpoints de la API).
+
+### Análisis Exploratorio de los Datos (EDA)
+
+Después de limpiar los datos, se realiza un análisis exploratorio para investigar relaciones entre variables, detectar outliers, y descubrir patrones interesantes. Incluye nubes de palabras para identificar términos frecuentes en los títulos.
 
 ### Desarrollo de la API
 
@@ -41,30 +45,23 @@ Se utilizó FastAPI para desarrollar una API con los siguientes endpoints:
 5. **`/get_actor/{nombre_actor}`**: Devuelve el éxito de un actor, la cantidad de películas en las que ha participado y el promedio de retorno.
 6. **`/get_director/{nombre_director}`**: Devuelve el éxito de un director, las películas que ha dirigido y detalles de cada una.
 
-### Despliegue
-
-El despliegue se realizó utilizando Render para que la API sea accesible desde la web.
-
-- **URL Render**: <https://proyecto-mlops-kpxh.onrender.com>
-
-### Análisis Exploratorio de los Datos (EDA)
-
-Después de limpiar los datos, se realiza un análisis exploratorio para investigar relaciones entre variables, detectar outliers, y descubrir patrones interesantes. Incluye nubes de palabras para identificar términos frecuentes en los títulos.
-
 ### Sistema de Recomendación
 
 Se entrena un modelo de recomendación que sugiera películas similares basándose en la similitud de puntuación. Implementar esta función adicional en la API:
 
-- **`/recomendacion/{titulo}`**: Devuelve una lista de 5 películas similares a la proporcionada.
+7. **`/recomendacion/{titulo}`**: Devuelve una lista de 5 películas similares a la proporcionada.
+
+### Despliegue
+
+El despliegue se realizó utilizando Render para que la API sea accesible desde la web (.../docs).
+
+- **URL Render**: <https://proyecto-mlops-kpxh.onrender.com>
 
 ### Video de Demostración
 
-Grabar un video de máximo 7 minutos mostrando:
-
 - Resultados de las consultas API.
 - Explicación breve del modelo de recomendación.
-- Explicación de EDA, ETL y desarrollo de la API.
-
+- Explicación de ETL, EDA y desarrollo de la API.
 - **URL YouTube**:
 
 ## Criterios de Evaluación
@@ -75,13 +72,13 @@ Grabar un video de máximo 7 minutos mostrando:
 
 ## Fuente de Datos
 
-- **Dataset**: `movies_dataset.csv` y `credits.csv`.
+- **Datasets**: `movies_dataset.csv` y `credits.csv`.
 - **Diccionario de Datos**: Descripciones de las columnas disponibles en el dataset.
 - **URL Data**: <https://drive.google.com/drive/folders/1_Mre-XI31f1whYUZaBF5-RnOGashkuH4?usp=drive_link>
 
 ## Autor
 
-Este proyecto fue realizado por: José Daniel Rivera Hernández. (<Daniel.rivera.30@outlook.com>)
+Este proyecto fue elaborado por: José Daniel Rivera Hernández. (<Daniel.rivera.30@outlook.com>)
 
 ---
 
